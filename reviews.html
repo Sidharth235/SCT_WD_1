@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GranTouring | Reviews</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfcf7;
+    }
+
+    .navbar {
+      background-color: #2F4F4F;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #f5f3e7 !important;
+    }
+
+    .nav-link:hover {
+      color: #d6b86c !important;
+    }
+
+    .navbar.scrolled {
+      background-color: #1E3932;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1, .section-title {
+      font-family: 'Playfair Display', serif;
+      color: #2F4F4F;
+    }
+
+    .review-card {
+      border: none;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-title {
+      color: #2F4F4F;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .btn-brass {
+      background-color: #d6b86c;
+      color: #2F4F4F;
+      border: none;
+    }
+
+    .btn-brass:hover {
+      background-color: #c3a85a;
+    }
+
+    .footer {
+      background-color: #2F4F4F;
+      color: #f5f3e7;
+    }
+
+    .footer a {
+      color: #d6b86c;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNavbar">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+  <img src="img\Screenshot 2025-05-19 184333.png" alt="GranTouring Logo" height="40" class="me-2"/>
+        GranTouring
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="marques.html">Marques</a></li>
+          <li class="nav-item"><a class="nav-link" href="heritage.html">Heritage</a></li>
+          <li class="nav-item"><a class="nav-link active" href="reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-5 mt-5 bg-light">
+    <div class="container">
+      <h1 class="display-5">GranTouring Reviews</h1>
+      <p class="lead">Curated critiques and expert opinions on the world’s finest automobiles</p>
+    </div>
+  </header>
+
+  <!-- Review Cards -->
+  <section class="container py-5">
+    <div class="row g-4">
+
+      <!-- Review 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card review-card h-100">
+          <img src="img\bentley-continential.jpg" class="card-img-top" alt="Bentley Continental GT">
+          <div class="card-body">
+            <h5 class="card-title">Bentley Continental GT</h5>
+            <p class="card-text">Luxury meets power in a grand tourer that redefines refinement. A smooth V8 and hand-crafted interiors make this a top-tier classic-modern hybrid.</p>
+            <a href="#" class="btn btn-brass mt-2">Read Full Review</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card review-card h-100">
+          <img src="img\ferrari-250.jpg" class="card-img-top" alt="Ferrari 250 GTO">
+          <div class="card-body">
+            <h5 class="card-title">Ferrari 250 GTO</h5>
+            <p class="card-text">Widely considered the greatest car ever built. A motorsport marvel that commands admiration not only for its performance but also for its rarity and grace.</p>
+            <a href="#" class="btn btn-brass mt-2">Read Full Review</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card review-card h-100">
+          <img src="img\rolls-phantom.jpg" class="card-img-top" alt="Rolls-Royce Phantom">
+          <div class="card-body">
+            <h5 class="card-title">Rolls-Royce Phantom VIII</h5>
+            <p class="card-text">Unmatched opulence and silence on wheels. The Phantom is more than a car—it's a moving sanctuary cloaked in prestige.</p>
+            <a href="#" class="btn btn-brass mt-2">Read Full Review</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="container py-5">
+  <h2 class="section-title text-center mb-4">Featured Legends</h2>
+
+  <div id="featuredReviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="d-flex flex-column flex-md-row align-items-center">
+          <img src="img\ferrari-250.jpg" class="d-block w-50 rounded" alt="Ferrari 250 GTO">
+          <div class="ms-md-4 mt-3 mt-md-0">
+            <h4 class="card-title">Ferrari 250 GTO</h4>
+            <p>Masterfully balanced, fiercely rare, and aesthetically iconic. A collector's dream and a driver’s legend.</p>
+            <a href="#" class="btn btn-brass">Explore More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="d-flex flex-column flex-md-row align-items-center">
+          <img src="img\bentley-continential.jpg" class="d-block w-50 rounded" alt="Bentley GT">
+          <div class="ms-md-4 mt-3 mt-md-0">
+            <h4 class="card-title">Bentley Continental GT</h4>
+            <p>Refined British engineering meets modern tourer comfort in this elegant powerhouse.</p>
+            <a href="#" class="btn btn-brass">Explore More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#featuredReviewsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#featuredReviewsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="section-title text-center mb-4">Collector Insights</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <blockquote class="blockquote bg-light p-4 border-start border-4 border-warning rounded shadow-sm">
+        <p>“The Phantom is less of a car and more of a private yacht on wheels.”</p>
+        <footer class="blockquote-footer">Charles de Rivière, Monaco Collector</footer>
+      </blockquote>
+    </div>
+    <div class="col-md-4">
+      <blockquote class="blockquote bg-light p-4 border-start border-4 border-warning rounded shadow-sm">
+        <p>“Owning the 250 GTO isn’t about speed. It’s about history in your garage.”</p>
+        <footer class="blockquote-footer">Aurelio Vitale, Historian</footer>
+      </blockquote>
+    </div>
+    <div class="col-md-4">
+      <blockquote class="blockquote bg-light p-4 border-start border-4 border-warning rounded shadow-sm">
+        <p>“Bentley’s craftsmanship is the definition of tasteful power.”</p>
+        <footer class="blockquote-footer">Clara Wexford, Automotive Editor</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+<section class="container py-5 text-center">
+  <h2 class="section-title mb-4">Then & Now</h2>
+  <p class="mb-4">Witness how timeless legends evolved while keeping their soul intact.</p>
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <h5>Ferrari 250 GTO (1962)</h5>
+      <img src="img\ferrari-250.jpg" class="img-fluid rounded mb-3" alt="Classic Ferrari">
+    </div>
+    <div class="col-md-5">
+      <h5>Ferrari Roma (2025)</h5>
+      <img src="img\ferrari-roma.jpg" class="img-fluid rounded mb-3" alt="Modern Ferrari">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 GranTouring. All rights reserved.</p>
+      <div>
+        <a href="#">Instagram</a> &middot;
+        <a href="#">Twitter</a> &middot;
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS & Scroll Effect -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      const nav = document.getElementById('mainNavbar');
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>

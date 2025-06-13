@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GranTouring | Heritage</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfcf7;
+    }
+
+    .navbar {
+      background-color: #2F4F4F;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #f5f3e7 !important;
+    }
+
+    .nav-link:hover {
+      color: #d6b86c !important;
+    }
+
+    .navbar.scrolled {
+      background-color: #1E3932;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1, .section-title {
+      font-family: 'Playfair Display', serif;
+      color: #2F4F4F;
+    }
+
+    .heritage-card {
+      border: none;
+      background-color: #ffffff;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .heritage-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-title {
+      font-family: 'Playfair Display', serif;
+      color: #2F4F4F;
+    }
+
+    .footer {
+      background-color: #2F4F4F;
+      color: #f5f3e7;
+    }
+
+    .footer a {
+      color: #d6b86c;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .carousel-item blockquote {
+  background-color: #9e8b59;
+  border-left: 4px solid #2F4F4F;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNavbar">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="img\Screenshot 2025-05-19 184333.png" alt="GranTouring Logo" height="40" class="me-2"/>
+        GranTouring
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="marques.html">Marques</a></li>
+          <li class="nav-item"><a class="nav-link active" href="heritage.html">Heritage</a></li>
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="text-center py-5 mt-5 bg-light">
+    <div class="container">
+      <h1 class="display-5">The Heritage Journal</h1>
+      <p class="lead">Stories behind timeless design, engineering mastery, and automotive legacy</p>
+    </div>
+  </header>
+
+  <!-- Heritage Stories -->
+  <section class="container py-5">
+    <div class="row g-4">
+
+      <!-- Story 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card heritage-card h-100">
+          <img src="img\Jaguar E type.jpg" class="card-img-top" alt="Jaguar E-Type">
+          <div class="card-body">
+            <h5 class="card-title">Jaguar E-Type: Art in Motion</h5>
+            <p class="card-text">Praised by Enzo Ferrari as the most beautiful car ever made, the E-Type is the icon of 1960s performance and elegance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card heritage-card h-100">
+          <img src="img\mercedes-SL.jpg" class="card-img-top" alt="Mercedes 300SL">
+          <div class="card-body">
+            <h5 class="card-title">Mercedes 300SL: The Gullwing Legend</h5>
+            <p class="card-text">With its iconic doors and racing roots, the 300SL remains a pinnacle of post-war German engineering and style.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card heritage-card h-100">
+          <img src="img\bugatti-atlantic.jpg" class="card-img-top" alt="Bugatti Type 57">
+          <div class="card-body">
+            <h5 class="card-title">Bugatti Type 57SC Atlantic</h5>
+            <p class="card-text">An automotive sculpture, the Type 57SC Atlantic is revered for its rarity, beauty, and Ettore Bugatti’s vision of speed as art.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+<section class="container py-5">
+  <h2 class="section-title mb-4 text-center">Heritage Timeline</h2>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item bg-transparent border-0"><strong>1924:</strong> Bugatti Type 35 dominates early Grand Prix racing.</li>
+    <li class="list-group-item bg-transparent border-0"><strong>1954:</strong> Mercedes introduces the 300SL Gullwing at the New York Auto Show.</li>
+    <li class="list-group-item bg-transparent border-0"><strong>1961:</strong> Jaguar E-Type stuns Geneva Motor Show with design & performance.</li>
+    <li class="list-group-item bg-transparent border-0"><strong>1975:</strong> Ferrari 308 GTB debuts, symbolizing passion and progress.</li>
+  </ul>
+</section>
+<!-- Did You Know Carousel -->
+<section class="container py-5">
+  <h2 class="section-title text-center mb-4">Did You Know?</h2>
+
+  <div id="triviaCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner text-center px-3">
+
+      <div class="carousel-item active">
+        <blockquote class="blockquote">
+          <p class="mb-3">Only four Bugatti Type 57SC Atlantics were ever made—one vanished and remains missing to this day.</p>
+          <footer class="blockquote-footer">Classic Car Archives</footer>
+        </blockquote>
+      </div>
+
+      <div class="carousel-item">
+        <blockquote class="blockquote">
+          <p class="mb-3">The Jaguar E-Type's design was inspired by fighter aircraft and could exceed 150 mph in the 1960s.</p>
+          <footer class="blockquote-footer">Jaguar Heritage Trust</footer>
+        </blockquote>
+      </div>
+
+      <div class="carousel-item">
+        <blockquote class="blockquote">
+          <p class="mb-3">The Mercedes 300SL was the first production car to use fuel injection, improving both performance and economy.</p>
+          <footer class="blockquote-footer">Mercedes-Benz Museum</footer>
+        </blockquote>
+      </div>
+
+      <div class="carousel-item">
+        <blockquote class="blockquote">
+          <p class="mb-3">The first Ferrari road car, the 125 S, was built in 1947 and had just 12 cylinders and 118 horsepower.</p>
+          <footer class="blockquote-footer">Ferrari Official History</footer>
+        </blockquote>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#triviaCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#triviaCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 GranTouring. All rights reserved.</p>
+      <div>
+        <a href="#">Instagram</a> &middot;
+        <a href="#">Twitter</a> &middot;
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS + Scroll Transition -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      const nav = document.getElementById('mainNavbar');
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>

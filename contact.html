@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GranTouring | Contact</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfcf7;
+    }
+
+    .navbar {
+      background-color: #2F4F4F;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #f5f3e7 !important;
+    }
+
+    .nav-link:hover {
+      color: #d6b86c !important;
+    }
+
+    .navbar.scrolled {
+      background-color: #1E3932;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1, .section-title {
+      font-family: 'Playfair Display', serif;
+      color: #2F4F4F;
+    }
+
+    .form-control,
+    .form-select {
+      background-color: #fff;
+      border-radius: 0.25rem;
+      border: 1px solid #ccc;
+    }
+
+    .btn-brass {
+      background-color: #d6b86c;
+      color: #2F4F4F;
+      border: none;
+    }
+
+    .btn-brass:hover {
+      background-color: #c3a85a;
+    }
+
+    .footer {
+      background-color: #2F4F4F;
+      color: #f5f3e7;
+    }
+
+    .footer a {
+      color: #d6b86c;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-card {
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      padding: 2rem;
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNavbar">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+  <img src="img\Screenshot 2025-05-19 184333.png" alt="GranTouring Logo" height="40" class="me-2"/>
+        GranTouring
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="marques.html">Marques</a></li>
+          <li class="nav-item"><a class="nav-link" href="heritage.html">Heritage</a></li>
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-5 mt-5 bg-light">
+    <div class="container">
+      <h1 class="display-5">Get In Touch</h1>
+      <p class="lead">We’d love to hear from you – whether it's feedback, questions, or just to talk classics</p>
+    </div>
+  </header>
+
+  <!-- Contact Form -->
+  <section class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 contact-card">
+
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="John Montague" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <select class="form-select" id="subject" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option>General Inquiry</option>
+              <option>Contribute a Review</option>
+              <option>Advertising & Partnership</option>
+              <option>Report an Issue</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-brass w-100">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 GranTouring. All rights reserved.</p>
+      <div>
+        <a href="#">Instagram</a> &middot;
+        <a href="#">Twitter</a> &middot;
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS & Scroll Effect -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      const nav = document.getElementById('mainNavbar');
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+</body>
+</html>
